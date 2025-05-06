@@ -1,0 +1,46 @@
+<!-- dogs.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dogs</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <!-- point at css/style.css -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>INST377 – Activities</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="dogs.html">Dogs</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="audio-instructions">
+      <p>Say “Navigate to Home/Stocks/Dogs”</p>
+      <p>Say “Change color to &lt;color&gt;”</p>
+      <p>Say “Hello”</p>
+    </div>
+    <div id="dogSlider"></div>
+    <div id="breedButtons"></div>
+    <div id="breedInfo" class="hidden">
+      <img id="breedImage" alt="">
+      <h2 id="breedName"></h2>
+      <p id="breedDescription"></p>
+      <p><strong>Min Life:</strong> <span id="minLife"></span> years</p>
+      <p><strong>Max Life:</strong> <span id="maxLife"></span> years</p>
+    </div>
+    <div class="audio-instructions">
+      <p>Also say “Load Dog Breed &lt;breed&gt;”</p>
+      <button onclick="startVoiceDogs()">Turn On Listening</button>
+      <button onclick="stopVoice()">Turn Off Listening</button>
+    </div>
+  </main>
+  <script src="js/dogs.js"></script>
+</body>
+</html>
